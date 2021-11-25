@@ -11,6 +11,6 @@ namespace PredatorSenseForDummies.Logic.Enums
         Enum_NotExist,
         Enum_SameVersionExist,
         Enum_OlderVersionExist,
-        Enum_NewerVersionExist,
+        Enum_NewerVersionExist
     }
 }

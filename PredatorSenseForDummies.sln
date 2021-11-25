@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredatorSenseForDummies.UI", "PredatorSenseForDummies\PredatorSenseForDummies.UI.csproj", "{5F247B60-14A9-4BA6-9F45-51B2C3E981D2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59D44941-18B0-4C81-A070-9238F8FDDBA5} = {59D44941-18B0-4C81-A070-9238F8FDDBA5}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredatorSenseForDummies.Logic", "PredatorSenseForDummies.Logic\PredatorSenseForDummies.Logic.csproj", "{59D44941-18B0-4C81-A070-9238F8FDDBA5}"
 EndProject

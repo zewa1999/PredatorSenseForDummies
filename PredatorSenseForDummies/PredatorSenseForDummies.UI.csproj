@@ -11,4 +11,12 @@
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Management.Automation" Version="7.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PredatorSenseForDummies.Logic\PredatorSenseForDummies.Logic.csproj" />
+  </ItemGroup>
+
 </Project>

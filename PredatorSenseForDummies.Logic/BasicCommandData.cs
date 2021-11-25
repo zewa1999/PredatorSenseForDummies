@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PredatorSenseForDummies.Logic.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ namespace PredatorSenseForDummies.Logic
     {
         public int MachineType { get; set; }
 
-        public eProductExistFlag ProductFlag { get; set; }
+        public ProductExistFlag ProductFlag { get; set; }
 
-        public eBrand MachineBrand { get; set; }
+        public Brand MachineBrand { get; set; }
 
         public string? ProductOldVersion { get; set; }
 

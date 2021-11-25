@@ -13,6 +13,6 @@ namespace PredatorSenseForDummies.Logic.Enums
         Enum_Gateway,
         Enum_Packard,
         Enum_eMachine,
-        Enum_Founder,
+        Enum_Founder
     }
 }

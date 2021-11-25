@@ -9,13 +9,9 @@ using System.Threading.Tasks;
 
 namespace PredatorSenseForDummies.Logic.Checks
 {
-    internal class ProductVersionCheck
+    public static class ProductVersionCheck
     {
-        [DllImport("kernel32.dll", SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool IsWow64Process([In] IntPtr hProcess, out bool wow64Process);
-
-        public ProductExistFlag CheckProductExist(string softwareid, string currentVersion)
+        public static ProductExistFlag CheckProductExist(string softwareid, string currentVersion)
         {
             ProductExistFlag productExistFlag = ProductExistFlag.Enum_NotExist;
             string name = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall";
@@ -66,7 +62,7 @@ namespace PredatorSenseForDummies.Logic.Checks
             }
             return productExistFlag;
         }
-        public ProductExistFlag CheckProductExist(
+        public static ProductExistFlag CheckProductExist(
         string softwareid,
         string currentVersion,
         out string installedVersion)
@@ -123,7 +119,7 @@ namespace PredatorSenseForDummies.Logic.Checks
             installedVersion = str1;
             return productExistFlag;
         }
-        public bool HotkeyUpdateNoticeCheck(string softwareid, string currentVersion)
+        public static bool HotkeyUpdateNoticeCheck(string softwareid, string currentVersion)
         {
             bool flag1 = false;
             string name = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall";

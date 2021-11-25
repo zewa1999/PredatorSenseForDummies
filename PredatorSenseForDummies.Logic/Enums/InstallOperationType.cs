@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PredatorSenseForDummies.Logic.Enums
 {
-    public enum eInstallOperationType
+    public enum InstallOperationType
     {
         Enum_Install,
         Enum_Uninstall,
         Enum_ReInstall,
-        Enum_Upgrade,
+        Enum_Upgrade
     }
 }

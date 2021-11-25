@@ -10,18 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PredatorSenseForDummies
+namespace PredatorSenseForDummies.UI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        public MainWindowViewModel _viewModel;
         public MainWindow()
         {
+            _viewModel = new MainWindowViewModel();
             InitializeComponent();
         }
     }
